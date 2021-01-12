@@ -1343,7 +1343,7 @@ function mod_qcreate_get_completion_active_rule_descriptions($cm) {
         switch ($key) {
             case 'completionquestions':
                 if (empty($val)) {
-                    continue;
+                    continue 2;
                 }
                 $descriptions[] = get_string('completionquestionsdesc', 'qcreate', $val);
                 break;
